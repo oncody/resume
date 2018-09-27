@@ -1,0 +1,153 @@
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    height: 1px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+body {
+    width: 800px;
+    height: 880px;
+    padding: 20px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+body > h2 {
+    clear: both;
+    padding-left: 0px;
+}
+
+#header {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#header > h2 {
+    display: inline-block;
+}
+
+#header > div {
+    display: inline-block;
+    clear: both;
+    font-size: 110%;
+}
+
+#skills h4 {
+    margin: 0px;
+}
+
+#skills th {
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+}
+
+#skills td {
+    vertical-align: top;
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+#skills ul {
+    padding-left: 0px;
+}
+
+.experience {
+    clear: both;
+}
+
+.experience > div {
+    clear: both;
+    display: flex;
+    align-items: baseline;
+}
+
+.experience > div > h4 {
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.experience > div > div:nth-child(2) {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.experience > div > div:last-child {
+    clear: both;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.experience > div > div {
+    display: inline-block;
+}
+
+.experience > ul {
+    clear: both;
+}
+
+.independent-project {
+}
+
+.independent-project > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 5px;
+}
+
+.independent-project > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.independent-project > div > h4 {
+    display: inline-block;
+}
+
+#education {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+#footer > div {
+    display: flex;
+    justify-content: space-between;
+}
