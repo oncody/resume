@@ -1,153 +1,42 @@
-h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+:root {
 }
 
-h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-h4 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-hr {
-    border: 0;
-    clear: both;
-    display: block;
-    width: 100%;
-    background-color: #000;
-    height: 1px;
-}
-
-ul {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-table {
-    border-spacing: 0px;
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-    width: 800px;
-    height: 880px;
-    padding: 20px;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
+  margin: 20px 0;
+  width: 800px;
+  height: 880px;
+  padding: 20px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
 }
 
-body > h2 {
-    clear: both;
-    padding-left: 0px;
+
+table {
+  border-spacing: 0;
+  width: 100%;
 }
 
-#header {
-    clear: both;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.hr {
+  height: 1px;
+  background-color: black;
 }
 
-#header > h2 {
-    display: inline-block;
-}
-
-#header > div {
-    display: inline-block;
-    clear: both;
-    font-size: 110%;
-}
-
-#skills h4 {
-    margin: 0px;
-}
-
-#skills th {
-    padding: 0px 0px 0px 5px;
-    text-align: left;
-}
-
-#skills td {
-    vertical-align: top;
-    margin-left: 10px;
-    padding-left: 30px;
-}
-
-#skills ul {
-    padding-left: 0px;
-}
-
-.experience {
-    clear: both;
-}
-
-.experience > div {
-    clear: both;
-    display: flex;
-    align-items: baseline;
-}
-
-.experience > div > h4 {
-    padding-left: 5px;
-    display: inline-block;
-}
-
-.experience > div > div:nth-child(2) {
-    padding-left: 20px;
-    display: inline-block;
-}
-
-.experience > div > div:last-child {
-    clear: both;
-    display: inline-block;
-    margin-left: auto;
-}
-
-.experience > div > div {
-    display: inline-block;
-}
-
-.experience > ul {
-    clear: both;
-}
-
-.independent-project {
-}
-
-.independent-project > div:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 5px;
-}
-
-.independent-project > div:nth-child(2){
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
-
-.independent-project > div > h4 {
-    display: inline-block;
-}
-
-#education {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-#footer {
-    margin-top: auto;
-}
-
-#footer > div {
-    display: flex;
-    justify-content: space-between;
+#main-content-table td {
+  -webkit-column-count: all;
+  -moz-column-count: all;
+  column-count: all;
 }
