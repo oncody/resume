@@ -1,4 +1,5 @@
 :root {
+  --left-padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
@@ -17,26 +18,63 @@ body {
   margin: 20px 0;
   width: 800px;
   height: 880px;
-  padding: 20px;
+  padding: var(--left-padding);
   border: 1px solid;
   display: flex;
   flex-direction: column;
   max-width: 50%;
 }
 
-
 table {
   border-spacing: 0;
   width: 100%;
 }
 
+ul {
+  padding-left: var(--left-padding);
+}
+
 .hr {
   height: 1px;
   background-color: black;
+  margin: 3px 0;
 }
 
-#main-content-table td {
-  -webkit-column-count: all;
-  -moz-column-count: all;
-  column-count: all;
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.experience-full-span {
+  grid-column: span 3;
+}
+
+.experience-last-column {
+  justify-self: end;
+}
+
+.experience-first-job {
+  margin-top: 5px;
+}
+
+.experience-another-job {
+  margin-top: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
 }
