@@ -3,69 +3,14 @@
 <html>
 <head>
   <link rel="stylesheet" href="resume.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
 
 <div id="header">
   <h2>Cody A. Smith</h2>
-  <span>Passionate senior full-stack developer with eight years of professional experience</span>
-</div>
-
-<div class="hr"></div>
-
-<h3>Skills</h3>
-<div class="skills-container">
-
-  <!-- header -->
-  <h4>Languages</h4>
-  <h4>Tools</h4>
-  <h4>Web</h4>
-  <h4>Frameworks</h4>
-  <h4>Development</h4>
-
-  <!-- Languages -->
-  <ul>
-    <li>Java</li>
-    <li>JavaScript</li>
-    <li>C#</li>
-    <li>SQL</li>
-    <li>HTML</li>
-    <li>Node.js</li>
-  </ul>
-
-  <!-- Tools -->
-  <ul>
-    <li>Subversion</li>
-    <li>Git</li>
-    <li>Maven</li>
-    <li>NPM</li>
-    <li>MongoDB</li>
-  </ul>
-
-  <!-- Web -->
-  <ul>
-    <li>AngularJS</li>
-    <li>Vue.js</li>
-    <li>Bootstrap</li>
-    <li>Webpack</li>
-    <li>Express.js</li>
-  </ul>
-
-  <!-- Frameworks -->
-  <ul>
-    <li>Jersey</li>
-    <li>Guice</li>
-    <li>Spring</li>
-  </ul>
-
-  <!-- Development -->
-  <ul>
-    <li>Agile Software Development</li>
-    <li>Scrum Software Development</li>
-    <li>Test-Driven Development</li>
-  </ul>
-
+  <div>Passionate senior full-stack software engineer with eight years of professional experience</div>
 </div>
 
 <div class="hr"></div>
@@ -75,15 +20,13 @@
   <h3 class="experience-full-span">Professional Experience</h3>
 
   <div class="experience-first-job experience-full-span"></div>
-  <h4>Clearwater Analytics</h4>
-  <span>Software Developer</span>
-  <span class="experience-last-column">2014 to present</span>
+  <h4 class="experience-first-column">Clearwater Analytics</h4>
+  <div>Senior Software Engineer</div>
+  <div class="experience-last-column">2014 to present</div>
 
-  <ul class="experience-full-span">
-    <li>Followed agile software development where I worked full stack with SQL Server and REST-ful Java back-end that used jersey, guice, and spring
-      frameworks
-    </li>
-    <li>Led a small team on a project that copies production data (15 TB) to development environments on a schedule</li>
+  <ul class="experience-full-span experience-first-column">
+    <li>Followed agile scrum software development where I worked full stack with SQL Server and REST-ful java back-end</li>
+    <li>Architected a software solution that every night snapshots the entirety of production data (~15TB) and copies the relevant parts to team development servers</li>
     <li>Worked on a product with deep development tool integration that manages versioning code and automating deploys</li>
     <li>Wrote a tool that automatically converted all schema and data from our legacy PostgreSQL database to SQL Server</li>
     <li>Added LDAP Authentication</li>
@@ -94,60 +37,103 @@
   </ul>
 
   <div class="experience-another-job experience-full-span"></div>
-  <h4>Sybase/SAP SE</h4>
-  <span>Software Developer/SDET</span>
-  <span class="experience-last-column">2011 to 2014</span>
+  <h4 class="experience-first-column">Sybase/SAP SE</h4>
+  <div>Software Engineer/SDET</div>
+  <div class="experience-last-column">2011 to 2014</div>
 
-  <ul class="experience-full-span">
+  <ul class="experience-full-span experience-first-column">
     <li>Worked on a product that implements mobile enterprise security and device management</li>
     <li>Followed agile software development where I worked full stack with a SQL Server back-end and ASP.NET front-end</li>
     <li>Managed a huge suite of tests that spanned .NET, Java, Android, Blackberry, and Windows Smartphone platforms</li>
     <li>Implemented an Android app that encrypts and stores secure company and user data using the PBKDF2 algorithm</li>
   </ul>
 
-
   <div class="hr experience-full-span"></div>
 
   <h3 class="experience-full-span">Independent Projects</h3>
-  <div class="independent-project">
-    <div>
-      <h4>Card Manager Tool</h4>
-      <div>2017</div>
-    </div>
-    <div>A solution that allows me to create and view cards for a card game.</div>
+
+  <h4 class="experience-most-span experience-first-column">Card Manager Tool</h4>
+  <div class="experience-last-column">2017</div>
+  <div class="experience-full-span experience-first-column">A solution that allows me to create and view cards for a card game.</div>
+
+  <h4 class="experience-most-span experience-first-column">Activity Scheduler</h4>
+  <div class="experience-last-column">2016</div>
+  <div class="experience-full-span experience-first-column">A website that schedules meetings and activities with details and constraints that others can view
+    and join.
   </div>
 
-  <div class="independent-project">
-    <div>
-      <h4>Activity Scheduler</h4>
-      <div>2016</div>
-    </div>
-    <div>A website that schedules meetings and activities with details and constraints that others can view and join.
-    </div>
+  <h4 class="experience-most-span experience-first-column">Gameboy GUI Android App</h4>
+  <div class="experience-last-column">2014</div>
+  <div class="experience-full-span experience-first-column">A Gameboy-like GUI that authenticates Twitch users, translates button presses to IRC messages, and
+    streams live video.
   </div>
 
-  <div class="independent-project">
-    <div>
-      <h4>Gameboy GUI Android App</h4>
-      <div>2014</div>
-    </div>
-    <div>A Gameboy-like GUI that authenticates Twitch users, translates button presses to IRC messages, and streams
-      live video.
-    </div>
-  </div>
+  <div class="hr experience-full-span"></div>
 
-  <div class="hr"></div>
-
-  <div id="education">
-    <h3>Education</h3>
-    <span>B.S. Computer Science, Boise State University</span>
-    <span>2011</span>
-  </div>
-
+  <h3 class="experience-full-span">Education</h3>
+  <h4 class="experience-first-column">Boise State University</h4>
+  <div>B.S. Computer Science</div>
+  <div class="experience-last-column experience-first-column">2011</div>
 
 </div>
 
+<div class="hr"></div>
 
+<h3>Skills</h3>
+<div class="skills-container">
+
+  <!-- header -->
+  <h4 class="skills-first-column">Languages</h4>
+  <h4 class="skills-first-column">Tools</h4>
+  <h4 class="skills-first-column">Web</h4>
+  <h4 class="skills-first-column">Java Frameworks</h4>
+  <h4 class="skills-first-column">Development</h4>
+
+  <!-- Languages -->
+  <ul class="skills-first-column">
+    <li>Java</li>
+    <li>JavaScript</li>
+    <li>C#</li>
+    <li>SQL</li>
+    <li>HTML</li>
+    <li>Node.js</li>
+  </ul>
+
+  <!-- Tools -->
+  <ul class="skills-first-column">
+    <li>Subversion</li>
+    <li>Git</li>
+    <li>Maven</li>
+    <li>NPM</li>
+    <li>MongoDB</li>
+    <li>RabbitMQ</li>
+    <li>Microsoft SQL Server</li>
+  </ul>
+
+  <!-- Web -->
+  <ul class="skills-first-column">
+    <li>AngularJS</li>
+    <li>Vue.js</li>
+    <li>Bootstrap</li>
+    <li>Webpack</li>
+    <li>Express.js</li>
+  </ul>
+
+  <!-- Frameworks -->
+  <ul class="skills-first-column">
+    <li>Jersey</li>
+    <li>Guice</li>
+    <li>Spring</li>
+  </ul>
+
+  <!-- Development -->
+  <ul class="skills-first-column">
+    <li>Agile Software Development</li>
+    <li>Scrum Software Development</li>
+    <li>Test-Driven Development</li>
+  </ul>
+
+</div>
 
 <div class="hr"></div>
 
@@ -158,7 +144,7 @@
   <!--</div>-->
 
   <a href="mailto:oncody@gmail.com">oncody@gmail.com</a>
-  <span>1263 E Ionia St, Meridian, ID, 83642</span>
+  <div>1263 E Ionia St, Meridian, ID, 83642</div>
 </div>
 
 </body>
