@@ -1,7 +1,8 @@
 :root {
   --left-padding: 20px;
   --experience-columns: 3;
-  --skills-columns: 5;
+  --skills-columns: 4;
+  --outline-padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
@@ -24,7 +25,6 @@ body {
   flex-direction: column;
   font-family: 'Lato', sans-serif;
   font-size: 90%;
-  /*border: 1px solid;*/
   /*height: 880px;*/
   /*margin: 20px 0;*/
   /*max-width: 50%;*/
@@ -41,21 +41,20 @@ a {
 }
 
 .hr {
-  height: 2px;
-  /*background-color: black;*/
+  height: 0;
   margin: 3px 0;
-  border: none;
-  border-top: solid 2px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
   background: transparent;
 
 }
 
 .experience-container ul {
-  padding-left: 40px;
+  padding-left: calc(var(--left-padding) + 2*(var(--outline-padding)))
 }
 
 .skills-container ul {
-  padding-left: 40px;
+  padding-left: calc(var(--left-padding) + 2*(var(--outline-padding)))
 }
 
 #header {
@@ -70,12 +69,13 @@ a {
 }
 
 .skills-first-column {
-  padding-left: 10px;
+  padding-left: var(--outline-padding);
 }
 
 .experience-container {
   display: grid;
   grid-template-columns: repeat(var(--experience-columns), auto);
+  grid-row-gap: 5px;
 }
 
 .experience-full-span {
@@ -83,31 +83,19 @@ a {
 }
 
 .experience-most-span {
-  grid-column: span 2;
-}
-
-.skills-full-span {
-  grid-column: span var(--skills-columns);
+  grid-column: span calc(var(--experience-columns) - 1);
 }
 
 .experience-last-column {
   justify-self: end;
 }
 
-.new-example {
-  margin-top: 5px;
-}
-
-.another-job {
-  margin-top: 10px;
-}
-
 .experience-first-column-title {
-  padding-left: 10px;
+  padding-left: var(--outline-padding);
 }
 
 .experience-first-column-content {
-  padding-left: 20px;
+  padding-left: calc(2*(var(--outline-padding)));
 }
 
 .footer {
