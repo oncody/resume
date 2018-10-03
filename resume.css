@@ -11,7 +11,8 @@ h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbod
   border: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, div, span {
+/*div*/
+h1, h2, h3, h4, h5, h6, p, span {
   display: inline-block;
 }
 
@@ -53,7 +54,7 @@ ul {
 
 .experience-container {
   display: grid;
-  grid-template-columns: repeat(var(--experience-columns), auto);
+  grid-template-columns: repeat(var(--experience-columns), 1fr);
   grid-row-gap: 5px;
   align-items: baseline;
 }
@@ -64,6 +65,10 @@ ul {
 
 .experience-most-span {
   grid-column: span calc(var(--experience-columns) - 1);
+}
+
+.experience-middle-column {
+  padding-left: 50px;
 }
 
 .experience-last-column {
