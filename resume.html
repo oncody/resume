@@ -6,171 +6,153 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
-<body>
+<body class="experience-container">
 
-<div id="header">
-  <h2>Cody Smith</h2>
-  <div>Passionate senior full-stack software engineer with eight years of professional experience</div>
+<h2>Cody Smith</h2>
+<div class="experience-most-span experience-last-column">Passionate senior full-stack software engineer with eight years of professional experience</div>
+
+<div class="hr experience-full-span"></div>
+
+<h3 class="experience-full-span">Professional Experience</h3>
+
+<h4 class="experience-first-column-title">Clearwater Analytics</h4>
+<h4>Senior Software Engineer</h4>
+<div class="experience-last-column">2014 to present</div>
+
+<ul class="experience-full-span experience-first-column-content">
+  <li>Architected a software solution that snapshotted production data (~20 TB), partitioned it according to different requirements, and restored it to more
+    than 20 team environments on a flexible and configurable schedule
+  </li>
+  <li>Significantly sped up timing and cut down on overall system load on a client-facing application by replacing client-side JavaScript polling with
+    server-sent events
+  </li>
+  <li>Supported a production-critical internal application that managed the release cycle and deployment of applications, including eliminating performance
+    bottlenecks through comprehensive re-architectures and leveraging client-side JavaScript page visibility API to not run background tasks when the tab is
+    not active
+  </li>
+  <li>Created a microservice that stored artifact metadata and wrote a corresponding Maven plugin that would automatically set artifact metadata before it
+    gets published to Artifactory
+  </li>
+  <li>Wrote a widely used Java JIRA library that performed common JIRA commands via their REST API</li>
+  <li>Added LDAP authentication and client-side session management to a previously unauthenticated internal application to to guarantee authorization and
+    properly secure the sensitive data
+  </li>
+  <li>Greatly aided our company-wide migration from PostgreSQL to Microsoft SQL Server by writing a tool that automatically converted all schema, data, and
+    stored procedures
+  </li>
+  <li>Increased overall quality by actively participating in designs, code reviews, retrospectives, and trainings</li>
+</ul>
+
+<h4 class="experience-first-column-title">Sybase/SAP SE</h4>
+<h4>Software Engineer/SDET</h4>
+<div class="experience-last-column">2011 to 2014</div>
+
+<ul class="experience-full-span experience-first-column-content">
+  <li>Worked on a product that implemented Samsung Knox mobile enterprise security and device management that allowed enterprise data to exist securely on
+    employee phones with administrative controls
+  </li>
+  <li>Hardened the security of our applications through penetration testing and patching vital security vulnerabilities</li>
+  <li>Worked on a proprietary, high-performant, low-level message queueing library that featured guaranteed delivery and cross-platform support across
+    Android, iOS, BlackBerry, and Windows
+  </li>
+  <li>Designed an Android solution for storing sensitive company and user data using PBKDF2 encryption</li>
+  <li>Managed a wide suite of unit, integration, and end-to-end tests for the message library across its platforms</li>
+</ul>
+
+<div class="hr experience-full-span"></div>
+
+<h3 class="experience-full-span">Independent Projects</h3>
+
+<h4 class="experience-most-span experience-first-column-title">Card Manager Website</h4>
+<div class="experience-last-column">2017</div>
+<div class="experience-full-span experience-first-column-content">A website written in MongoDB, Node.js, and AngularJS that allowed you to view, edit, and
+  create cards for a card game, featuring registration, bcrypt server password encryption, JWT authentication and session management
 </div>
 
-<div class="experience-container">
-
-  <div class="hr experience-full-span"></div>
-
-  <h3 class="experience-full-span">Professional Experience</h3>
-
-  <h4 class="experience-first-column-title">Clearwater Analytics</h4>
-  <h4>Senior Software Engineer</h4>
-  <div class="experience-last-column">2014 to present</div>
-
-  <ul class="experience-full-span experience-first-column-content">
-    <li>Architected a software solution that snapshotted production data (~20 TB), partitioned it according to different requirements, and restored it to more
-      than 20 team environments on a flexible and configurable schedule
-    </li>
-    <li>Significantly sped up timing and cut down on overall system load on a client-facing application by replacing client-side JavaScript polling with
-      server-sent events
-    </li>
-    <li>Supported a production-critical internal application that managed the release cycle and deployment of applications, including eliminating performance
-      bottlenecks through comprehensive re-architectures and leveraging client-side JavaScript page visibility API to not run background tasks when the tab is
-      not active
-    </li>
-    <li>Created a microservice that stored artifact metadata and wrote a corresponding Maven plugin that would automatically set artifact metadata before it
-      gets published to Artifactory
-    </li>
-    <li>Wrote a widely used Java JIRA library that performed common JIRA commands via their REST API</li>
-    <li>Added LDAP authentication and client-side session management to a previously unauthenticated internal application to to guarantee authorization and
-      properly secure the sensitive data
-    </li>
-    <li>Greatly aided our company-wide migration from PostgreSQL to Microsoft SQL Server by writing a tool that automatically converted all schema, data, and
-      stored procedures
-    </li>
-    <li>Increased overall quality by actively participating in designs, code reviews, retrospectives, and trainings</li>
-  </ul>
-
-  <h4 class="experience-first-column-title">Sybase/SAP SE</h4>
-  <h4>Software Engineer/SDET</h4>
-  <div class="experience-last-column">2011 to 2014</div>
-
-  <ul class="experience-full-span experience-first-column-content">
-    <li>Worked on a product that implemented Samsung Knox mobile enterprise security and device management that allowed enterprise data to exist securely on
-      employee phones with administrative controls
-    </li>
-    <li>Hardened the security of our applications through penetration testing and patching vital security vulnerabilities</li>
-    <li>Worked on a proprietary, high-performant, low-level message queueing library that featured guaranteed delivery and cross-platform support across
-      Android, iOS, BlackBerry, and Windows
-    </li>
-    <li>Designed an Android solution for storing sensitive company and user data using PBKDF2 encryption</li>
-    <li>Managed a wide suite of unit, integration, and end-to-end tests for the message library across its platforms</li>
-  </ul>
-
-  <div class="hr experience-full-span"></div>
-
-  <h3 class="experience-full-span">Independent Projects</h3>
-
-  <h4 class="experience-most-span experience-first-column-title">Webpack Hot Swap Tutorial</h4>
-  <div class="experience-last-column">2018</div>
-  <div class="experience-full-span experience-first-column-content">A tutorial that showed how to leverage webpack in development to instantly live reload any
-    changed JavaScript file in both a backend Node.js server and the JavaScript web client
-  </div>
-
-  <h4 class="experience-most-span experience-first-column-title">Card Manager Website</h4>
-  <div class="experience-last-column">2017</div>
-  <div class="experience-full-span experience-first-column-content">A website written in MongoDB, Node.js, and AngularJS that allowed you to view, edit, and
-    create cards for a card game, featuring registration, bcrypt server password encryption, JWT authentication and session management
-  </div>
-
-  <h4 class="experience-most-span experience-first-column-title">Activity Scheduler Website</h4>
-  <div class="experience-last-column">2016</div>
-  <div class="experience-full-span experience-first-column-content">A website written in ASP.NET, C#, and Microsoft SQL Server where you could schedule or RSVP
-    to meetings and team-building activities with configurable details and constraints, and LDAP authentication
-  </div>
-
-  <h4 class="experience-most-span experience-first-column-title">GameBoy GUI Android App</h4>
-  <div class="experience-last-column">2014</div>
-  <div class="experience-full-span experience-first-column-content">An Android application with a GameBoy-like user interface that authenticated users with
-    Twitch.tv via OAuth, streamed live video, read and wrote to an IRC channel, and relayed user button presses as IRC messages to the Twitch.tv server
-  </div>
-
-  <div class="hr experience-full-span"></div>
-
-  <h3 class="experience-full-span">Education</h3>
-
-  <h4 class="experience-first-column-title">Boise State University</h4>
-  <h4>B.S. Computer Science</h4>
-  <div class="experience-last-column">2011</div>
-
-  <div class="hr experience-full-span"></div>
-
+<h4 class="experience-most-span experience-first-column-title">GameBoy GUI Android App</h4>
+<div class="experience-last-column">2014</div>
+<div class="experience-full-span experience-first-column-content">An Android application with a GameBoy-like user interface that authenticated users with
+  Twitch.tv via OAuth, streamed live video, read and wrote to an IRC channel, and relayed user button presses as IRC messages
 </div>
 
-<h3>Skills</h3>
-<div class="skills-container">
+<div class="hr experience-full-span"></div>
 
-  <!-- header -->
-  <h4 class="skills-first-column">Development</h4>
-  <h4 class="skills-first-column">Languages</h4>
-  <h4 class="skills-first-column">Tools</h4>
-  <h4 class="skills-first-column">Web</h4>
+<h3 class="experience-full-span">Education</h3>
 
-  <!-- Development -->
-  <ul class="skills-first-column">
-    <li>Agile Scrum Software Development</li>
-    <li>Object-oriented Programming</li>
-    <li>Test-driven Development</li>
-    <li>Service-oriented Architecture</li>
-    <li>Software Development Security</li>
-    <li>REST Architecture</li>
-    <li>Continuous Delivery</li>
-    <li>Session Management</li>
-  </ul>
+<h4 class="experience-first-column-title">Boise State University</h4>
+<h4>B.S. Computer Science</h4>
+<div class="experience-last-column">2011</div>
 
-  <!-- Languages -->
-  <ul class="skills-first-column">
-    <li>Java</li>
-    <li>JavaScript</li>
-    <li>C#</li>
-    <li>SQL</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>TypeScript</li>
-    <li>Node.js</li>
-  </ul>
+<div class="hr experience-full-span"></div>
 
-  <!-- Tools -->
-  <ul class="skills-first-column">
-    <li>Git</li>
-    <li>Subversion</li>
-    <li>Microsoft SQL Server</li>
-    <li>RabbitMQ</li>
-    <li>Tomcat Server</li>
-    <li>Nginx</li>
-    <li>MongoDB</li>
-    <li>Internet Information Services</li>
-  </ul>
+<h3 class="experience-full-span">Skills</h3>
+<div class="experience-full-span">
+  <div class="skills-container">
 
-  <!-- Web -->
-  <ul class="skills-first-column">
-    <li>AngularJS</li>
-    <li>Vue.js</li>
-    <li>ASP.NET</li>
-    <li>Bootstrap</li>
-    <li>Webpack</li>
-    <li>Express.js</li>
-  </ul>
+    <!-- header -->
+    <h4 class="skills-first-column">Development</h4>
+    <h4 class="skills-first-column">Languages</h4>
+    <h4 class="skills-first-column">Tools</h4>
+    <h4 class="skills-first-column">Web</h4>
 
-  <div class="hr skills-full-span"></div>
+    <!-- Development -->
+    <ul class="skills-first-column">
+      <li>Agile Scrum Software Development</li>
+      <li>Object-oriented Programming</li>
+      <li>Test-driven Development</li>
+      <li>Service-oriented Architecture</li>
+      <li>Software Development Security</li>
+      <li>REST Architecture</li>
+      <li>Continuous Delivery</li>
+      <li>Session Management</li>
+    </ul>
+
+    <!-- Languages -->
+    <ul class="skills-first-column">
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>C#</li>
+      <li>SQL</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>TypeScript</li>
+      <li>Node.js</li>
+    </ul>
+
+    <!-- Tools -->
+    <ul class="skills-first-column">
+      <li>Git</li>
+      <li>Subversion</li>
+      <li>Microsoft SQL Server</li>
+      <li>RabbitMQ</li>
+      <li>Tomcat Server</li>
+      <li>Nginx</li>
+      <li>MongoDB</li>
+      <li>Internet Information Services</li>
+    </ul>
+
+    <!-- Web -->
+    <ul class="skills-first-column">
+      <li>AngularJS</li>
+      <li>Vue.js</li>
+      <li>ASP.NET</li>
+      <li>Bootstrap</li>
+      <li>Webpack</li>
+      <li>Express.js</li>
+    </ul>
+
+    <div class="hr skills-full-span"></div>
+  </div>
 </div>
 
-<div class="experience-container">
-  <!--<div><a href="http://oncody.com">oncody.com</a></div>-->
+<!--<div><a href="http://oncody.com">oncody.com</a></div>-->
 
-  <a href="mailto:oncody@gmail.com">oncody@gmail.com</a>
-  <div>(208) 860-3799</div>
-  <div class="experience-last-column">1263 E Ionia St, Meridian, ID, 83642</div>
+<a href="mailto:oncody@gmail.com">oncody@gmail.com</a>
+<div>(208) 860-3799</div>
+<div class="experience-last-column">1263 E Ionia St, Meridian, ID, 83642</div>
 
-  <div class="experience-most-span">Resume written in HTML and CSS</div>
-  <a href="https://github.com/oncody/resume" class="experience-last-column">https://github.com/oncody/resume</a>
-</div>
+<div class="experience-most-span">Resume written in HTML and CSS</div>
+<a href="https://github.com/oncody/resume" class="experience-last-column">https://github.com/oncody/resume</a>
 
 </body>
 </html>
