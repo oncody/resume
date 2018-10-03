@@ -46,15 +46,14 @@ a {
   border-top: solid 1px black;
   border-bottom: solid 1px black;
   background: transparent;
-
 }
 
 .experience-container ul {
-  padding-left: calc(var(--left-padding) + 2*(var(--outline-padding)))
+  padding-left: calc(var(--left-padding) + 2 * (var(--outline-padding)))
 }
 
 .skills-container ul {
-  padding-left: calc(var(--left-padding) + 2*(var(--outline-padding)))
+  padding-left: calc(var(--left-padding) + 2 * (var(--outline-padding)))
 }
 
 #header {
@@ -95,13 +94,12 @@ a {
 }
 
 .experience-first-column-content {
-  padding-left: calc(2*(var(--outline-padding)));
+  padding-left: calc(2 * (var(--outline-padding)));
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
 }
 
 .experience-container li {
