@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbod
   border: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p, div, span {
+  display: inline-block;
+}
+
 html {
   /*display: flex;*/
   /*align-items: center;*/
@@ -35,6 +39,10 @@ a {
   color: inherit;
 }
 
+ul {
+  padding-left: calc(var(--left-padding) + (2 * (var(--outline-padding))))
+}
+
 .hr {
   height: 0;
   border-top: solid 1px black;
@@ -43,14 +51,11 @@ a {
   /*margin: 3px 0;*/
 }
 
-.experience-container ul {
-  padding-left: calc(var(--left-padding) + 2 * (var(--outline-padding)))
-}
-
 .experience-container {
   display: grid;
   grid-template-columns: repeat(var(--experience-columns), auto);
   grid-row-gap: 5px;
+  align-items: baseline;
 }
 
 .experience-full-span {
@@ -81,10 +86,6 @@ a {
   display: grid;
   grid-template-columns: repeat(var(--skills-columns), auto);
   grid-row-gap: 5px;
-}
-
-.skills-container ul {
-  padding-left: calc(var(--left-padding) + 2 * (var(--outline-padding)))
 }
 
 .skills-first-column {
