@@ -1,8 +1,8 @@
 :root {
+  --outline-padding: 10px;
   --left-padding: 20px;
   --experience-columns: 3;
   --skills-columns: 4;
-  --outline-padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
@@ -42,7 +42,7 @@ a {
 
 .hr {
   height: 0;
-  margin: 3px 0;
+  /*margin: 3px 0;*/
   border-top: solid 1px black;
   border-bottom: solid 1px black;
   background: transparent;
@@ -65,10 +65,15 @@ a {
 .skills-container {
   display: grid;
   grid-template-columns: repeat(var(--skills-columns), auto);
+  grid-row-gap: 5px;
 }
 
 .skills-first-column {
   padding-left: var(--outline-padding);
+}
+
+.skills-full-span {
+  grid-column: span var(--skills-columns);
 }
 
 .experience-container {
@@ -95,11 +100,6 @@ a {
 
 .experience-first-column-content {
   padding-left: calc(2 * (var(--outline-padding)));
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 .experience-container li {
