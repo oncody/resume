@@ -27,21 +27,27 @@
     <li>Significantly sped up timing and cut down on overall system load on a client-facing application by replacing client-side JavaScript polling with
       server-sent events
     </li>
-    <li>Proactively increased the overall quality of our products by actively participating in design meetings, code reviews, retrospectives, and hosting
-      knowledge-sharing meetings
+    <li>Proactively increased the overall quality of our products by actively participating in design meetings, code reviews, retrospectives, and trainings
     </li>
-    <li>Supported a production-critical internal application that managed the release cycle and deployment of applications including profiling the application
-      and eliminating performance bottlenecks
+    <li>Supported a production-critical internal application that managed the release cycle and deployment of applications, including eliminating performance
+      bottlenecks through comprehensive re-architectures and leveraging client-side JavaScript page visibility API to not run background tasks when the tab is
+      not active
     </li>
-    <li>Created a microservice that handled setting and getting build artifact metadata in Artifactory and wrote a corresponding Maven plugin that communicated
-      with the microservice immediately before the artifact gets published
+    <li>Created a microservice that handled getting and setting artifact metadata and wrote a corresponding Maven plugin that automatically communicated
+      artifact metadata
+      to the microservice immediately before it gets published to Artifactory
     </li>
-    <li>Wrote a highly sought after shared internal Java library that performed many common JIRA commands via JIRA REST API</li>
-    <li>Added client-side session management and LDAP authentication to a previously unauthenticated internal application</li>
-    <li>Architected a software solution that snapshotted production data (~20 TB), partitioned it according to different needs, and restored it to various team
+    <li>Wrote a shared internal Java library that many teams used that performed common JIRA commands via JIRA REST API</li>
+    <li>Added LDAP authentication and client-side session management to a previously unauthenticated internal application to to guarantee authorization and
+      properly secure the sensitive data
+    </li>
+    <li>Architected a software solution that snapshotted production data (~20 TB), partitioned it according to different teams' needs, and restored it to more
+      than 20 team
       development environments on a flexible and configurable schedule
     </li>
-    <li>Greatly aided our company-wide migration from PostgreSQL to SQL Server by writing a tool that automatically converted all schema, data, and stored procedures</li>
+    <li>Greatly aided our company-wide migration from PostgreSQL to SQL Server by writing a tool that automatically converted all schema, data, and stored
+      procedures while manually replacing the database implementation code to SQL Server
+    </li>
   </ul>
 
   <h4 class="experience-first-column-title">Sybase/SAP SE</h4>
@@ -50,10 +56,12 @@
 
   <ul class="experience-full-span experience-first-column-content">
     <li>Negotiated requirements with our product owner and designed an Android app that stored sensitive company and user data in an encrypted way</li>
-    <li>Worked on a product that implemented mobile enterprise security and device management Samsung KNOX</li>
-    <li>Worked on a low-level message queueing client that</li>
-    <li>Managed a wide suite of unit, integration, and end-to-end tests that spanned C, C++, C#, Java, Android, and iOS</li>
+    <li>Worked on a product that implemented Samsung Knox mobile enterprise security and device management that allowed enterprise data to exist on employees'
+      phones in a secure way including administrative controls to remotely wipe devices
+    </li>
     <li>Hardened the security of our applications through penetration testing and patching vital security vulnerabilities</li>
+    <li>Worked on a proprietary high-performant low-level message queueing library that featured guaranteed delivery and cross-platform support including C, C++, C#, Java, Android, iOS, BlackBerry, and early Windows handheld phones</li>
+    <li>Managed a wide suite of unit, integration, and end-to-end tests for the message library that spanned the above platforms</li>
   </ul>
 
   <div class="hr experience-full-span"></div>
@@ -63,27 +71,25 @@
   <h4 class="experience-most-span experience-first-column-title">Webpack Hot Swap Tutorial</h4>
   <div class="experience-last-column">2018</div>
   <div class="experience-full-span experience-first-column-content">A tutorial that showed how to leverage webpack to hot swap a node backend server and
-    javascript web client. Introduciton to webapack. Shows how to setup webpack to hot reoload without refreshing your browswer.
+    javascript web client. Introduction to webpack. Shows how to setup webpack to hot reload without refreshing your browser.
   </div>
 
   <h4 class="experience-most-span experience-first-column-title">Card Manager Website</h4>
   <div class="experience-last-column">2017</div>
   <div class="experience-full-span experience-first-column-content">A website written in MongoDB, Node.js, and AngularJS that allowed you to view, edit, and
-    create
-    cards for a card game. This was complete with registration, encrypting server password , jwt authentication
+    create cards for a card game, complete with registration, server password encryption, JWT authentication and session management.
   </div>
 
   <h4 class="experience-most-span experience-first-column-title">Activity Scheduler Website</h4>
   <div class="experience-last-column">2016</div>
-  <div class="experience-full-span experience-first-column-content">A website written in ASP.NET, C#, and Microsoft SQL Server that scheduled meetings and
-    activities
-    with details and constraints that others could view and join, complete with LDAP authentication
+  <div class="experience-full-span experience-first-column-content">A website written in ASP.NET, C#, and Microsoft SQL Server where you could schedule or RSVP to meetings and
+    team-building activities with configurable details and constraints, complete with LDAP authentication
   </div>
 
-  <h4 class="experience-most-span experience-first-column-title">Gameboy GUI Android App</h4>
+  <h4 class="experience-most-span experience-first-column-title">GameBoy GUI Android App</h4>
   <div class="experience-last-column">2014</div>
-  <div class="experience-full-span experience-first-column-content">A Gameboy-like GUI that authenticated users with Twitch.tv, read and wrote to an IRC
-    channel, translated button presses to IRC messages, and streamed video live. oauth
+  <div class="experience-full-span experience-first-column-content">An Android application with a GameBoy-like user interface that authenticated users with Twitch.tv via OAuth, streamed live video, read and wrote to an IRC
+    channel, and relayed user button presses as IRC messages to the Twitch.tv server
   </div>
 
   <div class="hr experience-full-span"></div>
