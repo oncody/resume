@@ -30,7 +30,8 @@ a {
 }
 
 ul {
-  padding-left: calc(4 * (var(--outline-padding)))
+  padding-left: calc(4 * (var(--outline-padding)));
+  line-height: 1.7;
 }
 
 .hr {
@@ -70,9 +71,9 @@ ul {
   padding-left: calc(2 * (var(--outline-padding)));
 }
 
-.experience-container li {
-  margin: 1px 0;
-}
+/*.experience-container li {*/
+  /*margin: 1px 0;*/
+/*}*/
 
 .skills-container {
   display: grid;
@@ -86,4 +87,13 @@ ul {
 
 .skills-full-span {
   grid-column: span var(--skills-columns);
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spacing {
+  line-height: 1.7;
 }
