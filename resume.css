@@ -71,10 +71,6 @@ ul {
   padding-left: calc(2 * (var(--outline-padding)));
 }
 
-/*.experience-container li {*/
-  /*margin: 1px 0;*/
-/*}*/
-
 .skills-container {
   display: grid;
   grid-template-columns: repeat(var(--skills-columns), auto);
