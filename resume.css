@@ -4,9 +4,6 @@
   --skills-columns: 4;
 }
 
-
-
-
 ul {
   padding-left: calc(4 * (var(--outline-padding)));
   line-height: 1.7;
