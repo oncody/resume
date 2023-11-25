@@ -5,10 +5,7 @@
 }
 
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 
 ul {
   padding-left: calc(4 * (var(--outline-padding)));

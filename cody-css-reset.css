@@ -29,3 +29,8 @@ body {
   font-size: var(--body-font-size);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
