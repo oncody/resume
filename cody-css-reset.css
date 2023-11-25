@@ -1,3 +1,7 @@
+:root {
+  --left-padding: 60px;
+}
+
 h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
   padding: 0;
   margin: 0;
@@ -8,5 +12,14 @@ h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbod
 /*div*/
 h1, h2, h3, h4, h5, h6, p, span {
   display: inline-block;
+}
+
+
+body {
+  margin: 0;
+  width: 800px;
+  padding: var(--left-padding);
+  font-family: 'Lato', sans-serif;
+  font-size: 90%;
 }
 

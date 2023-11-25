@@ -1,19 +1,9 @@
 :root {
   --outline-padding: 10px;
-  --left-padding: 60px;
   --experience-columns: 3;
   --skills-columns: 4;
 }
 
-
-
-body {
-  margin: 0;
-  width: 800px;
-  padding: var(--left-padding);
-  font-family: 'Lato', sans-serif;
-  font-size: 90%;
-}
 
 a {
   text-decoration: none;
