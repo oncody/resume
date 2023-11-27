@@ -2,8 +2,6 @@
   --default-padding: 0px;
   --default-margin: 0px;
   --default-border: 0px;
-  --left-padding: 60px;
-  --body-width: 800px;
   --default-font: 'Lato', sans-serif;
   --default-font-size: 90%;
   /*--default-font-size: 16px;*/
@@ -26,8 +24,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 body {
   margin: var(--default-margin);
-  width: var(--body-width);
-  padding-left: var(--left-padding);
   font-family: var(--default-font);
   font-size: var(--default-font-size);
   line-height: var(--default-line-height);

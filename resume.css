@@ -2,6 +2,13 @@
   --outline-padding: 10px;
   --experience-columns: 3;
   --skills-columns: 4;
+  --left-padding: 60px;
+  --body-width: 800px;
+}
+
+body {
+  width: var(--body-width);
+  padding-left: var(--left-padding);
 }
 
 ul {
