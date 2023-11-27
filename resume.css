@@ -42,8 +42,6 @@ body * {
   margin-inline-end: var(--default-margin);
 }
 
-
-
 body {
   width: var(--body-width);
   height: var(--body-height);
@@ -97,10 +95,14 @@ ul {
   color: var(--accent-color);
 }
 
+.professional-title {
+  /*text-indent: 20px;*/
+  margin-left: 20px;
+}
+
 .section-title {
   color: var(--accent-color);
 }
-
 
 /* Style the floating HR */
 .floating-hr {
@@ -115,6 +117,8 @@ ul {
 .hr {
   height: 0;
   border-top: solid 1px black;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /*border-bottom: solid 1px black;*/
 }
 
