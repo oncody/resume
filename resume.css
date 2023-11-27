@@ -6,6 +6,21 @@
   --top-margin: 60px;
   --body-width: 800px;
   --body-padding: 20px;
+  --primary-color: #000000;
+
+  /*--accent-color:  #0095D4;*/
+  /*--accent-color:  #0099CC;*/
+  /*--accent-color:  #00A8E8;*/
+  /*--accent-color:  #00C4FF;*/
+  /*--accent-color:  #00AEEF;*/
+  /*--accent-color:  #00BFFF;*/
+  /*--accent-color:  #6495ED;*/
+  --accent-color:  #4D81E4;
+  /*--accent-color:  #4BB543;*/
+  /*--accent-color:  #7ACF61;*/
+  /*--accent-color:  #00CC66;*/
+  /*--accent-color:  #33CC33;*/
+  /*--accent-color:  #00FF00;*/
 }
 
 body {
@@ -14,6 +29,7 @@ body {
   margin-top: var(--top-margin);
   padding: var(--body-padding);
   border: solid 1px black;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -35,6 +51,31 @@ h4 {
 ul {
   padding-left: calc(4 * (var(--outline-padding)));
   line-height: 1.7;
+}
+
+.flexbox-container-basic {
+  display: flex;
+  align-items: baseline; /* align text */
+}
+
+.flexbox-container-full {
+  display: flex;
+  align-items: baseline; /* align text */
+  justify-content: space-between; /* Push items to the left and right */
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+/* Style the floating HR */
+.floating-hr {
+  position: absolute; /* Position the HR absolutely within the container */
+  top: 9.3%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%); /* Center the HR within the container */
+  width: 100%; /* Adjust the HR width as needed */
+  border: 1px solid #000; /* Style the HR border as needed */
 }
 
 .hr {
@@ -86,12 +127,6 @@ ul {
 
 .skills-full-span {
   grid-column: span var(--skills-columns);
-}
-
-.flexbox-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
 }
 
 .spacing {
