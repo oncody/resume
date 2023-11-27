@@ -6,6 +6,12 @@
   --top-margin: 60px;
   --body-width: 800px;
   --body-padding: 20px;
+  --default-font: 'Lato', sans-serif;
+  --default-font-size: 90%;
+  /*--default-font-size: 16px;*/
+  --default-line-height: 1.5;
+
+
   --primary-color: #000000;
 
   /*--accent-color:  #0095D4;*/
@@ -23,6 +29,18 @@
   /*--accent-color:  #00FF00;*/
 }
 
+h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
+  /*font-size: var(--default-font-size);*/
+  line-height: var(--default-line-height);
+  font-weight: normal;
+  margin-block-start: var(--default-margin);
+  margin-block-end: var(--default-margin);
+  margin-inline-start: var(--default-margin);
+  margin-inline-end: var(--default-margin);
+}
+
+
+
 body {
   width: var(--body-width);
   margin-left: var(--left-margin);
@@ -30,6 +48,9 @@ body {
   padding: var(--body-padding);
   border: solid 1px black;
   color: var(--primary-color);
+  font-family: var(--default-font);
+  font-size: var(--default-font-size);
+  line-height: var(--default-line-height);
 }
 
 h1 {

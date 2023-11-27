@@ -2,10 +2,6 @@
   --default-padding: 0px;
   --default-margin: 0px;
   --default-border: 0px;
-  --default-font: 'Lato', sans-serif;
-  --default-font-size: 90%;
-  /*--default-font-size: 16px;*/
-  --default-line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
@@ -28,9 +24,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 body {
   margin: var(--default-margin);
-  font-family: var(--default-font);
-  font-size: var(--default-font-size);
-  line-height: var(--default-line-height);
   font-weight: normal;
 }
 
