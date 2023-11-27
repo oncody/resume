@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbod
   /*font-size: var(--default-font-size);*/
   line-height: var(--default-line-height);
   font-weight: normal;
+  margin-block-start: var(--default-margin);
+  margin-block-end: var(--default-margin);
+  margin-inline-start: var(--default-margin);
+  margin-inline-end: var(--default-margin);
 }
 
 /*div*/
