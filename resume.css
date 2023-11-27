@@ -1,7 +1,7 @@
 :root {
   --outline-padding: 10px;
-  --experience-columns: 3;
-  --skills-columns: 4;
+  --experience-columns: 2;
+  --skills-columns: 3;
   --left-margin: 60px;
   --top-margin: 60px;
   --body-width: 800px;
@@ -71,6 +71,14 @@ h4 {
   font-size: 18px;
 }
 
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
 ul {
   padding-left: calc(4 * (var(--outline-padding)));
   line-height: 1.7;
@@ -78,7 +86,7 @@ ul {
 
 .flexbox-container-basic {
   display: flex;
-  align-items: baseline; /* align text */
+  align-items: baseline; /* align text at the bottom */
 }
 
 .flexbox-container-basic > * {
@@ -87,7 +95,7 @@ ul {
 
 .flexbox-container-full {
   display: flex;
-  align-items: baseline; /* align text */
+  align-items: baseline; /* align text at the bottom */
   justify-content: space-between; /* Push items to the left and right */
 }
 
@@ -123,10 +131,10 @@ ul {
 }
 
 .experience-container {
-  display: grid;
-  grid-template-columns: repeat(var(--experience-columns), 1fr);
-  grid-row-gap: 5px;
-  align-items: baseline;
+  /*display: grid;*/
+  /*grid-template-columns: repeat(var(--experience-columns), 1fr);*/
+  /*grid-row-gap: 5px;*/
+  /*align-items: baseline; !* align text at the bottom *!*/
 }
 
 .experience-full-span {
@@ -137,9 +145,9 @@ ul {
   grid-column: span calc(var(--experience-columns) - 1);
 }
 
-.experience-middle-column {
-  padding-left: 50px;
-}
+/*.experience-middle-column {*/
+/*  padding-left: 50px;*/
+/*}*/
 
 .experience-last-column {
   justify-self: end;
