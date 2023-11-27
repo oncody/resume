@@ -79,6 +79,10 @@ h6 {
   font-size: 14px;
 }
 
+.small-text {
+  font-size: 12px;
+}
+
 ul {
   padding-left: calc(4 * (var(--outline-padding)));
   line-height: 1.7;
