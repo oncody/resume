@@ -58,6 +58,10 @@ ul {
   align-items: baseline; /* align text */
 }
 
+.flexbox-container-basic > * {
+  margin-right: 10px;
+}
+
 .flexbox-container-full {
   display: flex;
   align-items: baseline; /* align text */
