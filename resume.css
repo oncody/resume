@@ -146,6 +146,7 @@ ul {
 
 .section-title {
   color: var(--accent-color);
+  margin-top: 15px;
 }
 
 /* Style the floating HR */
@@ -160,7 +161,8 @@ ul {
 
 .hr {
   height: 0;
-  border-top: solid 1px black;
+  /*border-top: solid 1px var(--accent-color);*/
+  border-top: solid 0px black;
   margin-top: var(--hr-margin);
   margin-bottom: var(--hr-margin);
   /*border-bottom: solid 1px black;*/
