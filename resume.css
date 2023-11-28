@@ -10,7 +10,7 @@
   --body-width-padding: 20px;
   --body-height-padding: 15px;
 
-  --default-font-size: 16px;
+  --default-font-size: 14px;
   --h1-font-size: 28px;
   --h2-font-size: 22px;
   --h3-font-size: 20px;
@@ -139,14 +139,13 @@ ul {
   /*align-items: center;*/
 }
 
-.professional-title p,span,div {
+.professional-title p, span, div {
   /*text-align: left;*/
 }
 
-
 .section-title {
   color: var(--accent-color);
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 /* Style the floating HR */
