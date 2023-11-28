@@ -105,6 +105,11 @@ ul {
   line-height: 1.7;
 }
 
+.flexbox-container-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
 .flexbox-container-basic {
   display: flex;
   align-items: baseline; /* align text at the bottom */
@@ -127,7 +132,17 @@ ul {
 .professional-title {
   /*text-indent: 20px;*/
   margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
+
+.professional-title p,span,div {
+  /*text-align: left;*/
+}
+
 
 .section-title {
   color: var(--accent-color);
