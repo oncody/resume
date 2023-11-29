@@ -2,13 +2,15 @@
   --outline-padding: 10px;
   --experience-columns: 2;
   --skills-columns: 3;
-  --left-margin: 60px;
-  --top-margin: 60px;
-  --body-width: 800px;
-  --body-height: 1100px;
 
-  --body-width-padding: 20px;
-  --body-height-padding: 15px;
+  --left-margin: 0px;
+  --top-margin:  0px;
+
+  --body-width: 730px;
+  --body-height: 970px;
+
+  --body-width-padding: 40px;
+  --body-height-padding: 40px;
 
   --default-font-size: 14px;
   --h1-font-size: 28px;
@@ -210,12 +212,4 @@ ul {
 
 .skills-first-column {
   padding-left: var(--outline-padding);
-}
-
-.skills-full-span {
-  grid-column: span var(--skills-columns);
-}
-
-.spacing {
-  line-height: 1.7;
 }
