@@ -9,7 +9,9 @@
   --body-height-padding: 40px;
 
   --section-separation: 15px;
+  --subsection-separation: 15px;
   --indent-size: 10px;
+  --title-subtitle-separation: 10px;
   --professional-experience-list-item-margin: 22px;
   --skills-list-item-margin: 12px;
 
@@ -140,7 +142,7 @@ ul {
 }
 
 .flexbox-container-basic > * {
-  margin-right: 10px;
+  margin-right: var(--title-subtitle-separation);
 }
 
 .flexbox-container-full {
@@ -168,7 +170,11 @@ ul {
 }
 
 .professional-experience-item {
-  margin-bottom: 10px;
+  margin-bottom: var(--subsection-separation);
+}
+
+.independent-project-item {
+  margin-bottom: var(--subsection-separation);
 }
 
 /* Style the floating HR */
