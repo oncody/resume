@@ -110,6 +110,10 @@ body * {
   padding-left: var(--indent-size);
 }
 
+.section-item-description {
+  padding-left: calc(var(--professional-title-indent) + var(--indent-size));
+}
+
 .section-item-subtitle {
   font-size: var(--section-item-subtitle-font-size);
   /*color: var(--accent-color);*/
