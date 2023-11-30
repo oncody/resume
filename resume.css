@@ -12,6 +12,8 @@
   --body-width-padding: 40px;
   --body-height-padding: 40px;
 
+  --section-separation: 15px;
+
   --hr-margin: 5px;
 }
 
@@ -94,7 +96,9 @@ body * {
 }
 
 .section-title {
+  color: var(--accent-color);
   font-size: var(--section-title-font-size);
+  margin-top: var(--section-separation);
 }
 
 .section-item {
@@ -152,11 +156,6 @@ ul {
 
 .professional-title p, span, div {
   /*text-align: left;*/
-}
-
-.section-title {
-  color: var(--accent-color);
-  margin-top: 5px;
 }
 
 /* Style the floating HR */
