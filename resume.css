@@ -1,6 +1,4 @@
 :root {
-  --skills-columns: 3;
-
   --left-margin: 0px;
   --top-margin:  0px;
 
@@ -184,10 +182,4 @@ li {
   margin-top: var(--hr-margin);
   margin-bottom: var(--hr-margin);
   /*border-bottom: solid 1px black;*/
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(var(--skills-columns), auto);
-  grid-row-gap: 5px;
 }
