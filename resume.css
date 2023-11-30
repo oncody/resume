@@ -17,12 +17,12 @@
 
 /* Font size */
 :root {
-  --default-font-size: 14px;
   --main-title-font-size: 28px;
   --subtitle-font-size: 22px;
-  --section-title-font-size: 20px;
+  --section-title-font-size: 22px;
   --section-item-font-size: 18px;
   --section-item-subtitle-font-size: 16px;
+  --default-font-size: 14px;
   --tiny-text-font-size: 12px;
 }
 
