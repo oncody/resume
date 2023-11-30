@@ -10,6 +10,8 @@
 
   --section-separation: 15px;
   --indent-size: 10px;
+  --professional-experience-list-item-margin: 22px;
+  --skills-list-item-margin: 12px;
 
   --hr-margin: 5px;
 }
@@ -118,9 +120,12 @@ ul {
   /*line-height: 1.7;*/
 }
 
-li {
-  /*margin-bottom: 5px;*/
-  margin-left: 22px;
+#skills-section li {
+  margin-left: calc(var(--skills-list-item-margin) + var(--indent-size))
+}
+
+#professional-experience li {
+  margin-left: calc(var(--professional-experience-list-item-margin) + var(--indent-size));
 }
 
 .flexbox-container-vertical {
