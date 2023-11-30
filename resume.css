@@ -93,13 +93,14 @@ body * {
 }
 
 .section-title {
-  color: var(--accent-color);
   font-size: var(--section-title-font-size);
   margin-top: var(--section-separation);
+  /*color: var(--accent-color);*/
 }
 
 .section-item {
   font-size: var(--section-item-font-size);
+  color: var(--accent-color);
 }
 
 .section-item-row {
@@ -108,7 +109,7 @@ body * {
 
 .section-item-subtitle {
   font-size: var(--section-item-subtitle-font-size);
-  color: var(--accent-color);
+  /*color: var(--accent-color);*/
 }
 
 .tiny-text {
