@@ -1,6 +1,4 @@
 :root {
-  --outline-padding: 10px;
-  --experience-columns: 2;
   --skills-columns: 3;
 
   --left-margin: 0px;
@@ -104,6 +102,10 @@ body * {
   font-size: var(--section-item-font-size);
 }
 
+.section-item-row {
+  padding-left: var(--indent-size);
+}
+
 .section-item-subtitle {
   font-size: var(--section-item-subtitle-font-size);
   color: var(--accent-color);
@@ -113,9 +115,8 @@ body * {
   font-size: var(--tiny-text-font-size);
 }
 
-
 ul {
-  padding-left: calc(4 * (var(--outline-padding)));
+  /*padding-left: calc(4 * (var(--outline-padding)));*/
   line-height: 1.7;
 }
 
@@ -170,42 +171,14 @@ ul {
 .hr {
   height: 0;
   /*border-top: solid 1px var(--accent-color);*/
-  border-top: solid 0px black;
+  border-top: solid 0 black;
   margin-top: var(--hr-margin);
   margin-bottom: var(--hr-margin);
   /*border-bottom: solid 1px black;*/
-}
-
-.experience-full-span {
-  grid-column: span var(--experience-columns);
-}
-
-.experience-most-span {
-  grid-column: span calc(var(--experience-columns) - 1);
-}
-
-/*.experience-middle-column {*/
-/*  padding-left: 50px;*/
-/*}*/
-
-.experience-last-column {
-  justify-self: end;
-}
-
-.experience-first-column-title {
-  padding-left: var(--outline-padding);
-}
-
-.experience-first-column-content {
-  padding-left: calc(2 * (var(--outline-padding)));
 }
 
 .skills-container {
   display: grid;
   grid-template-columns: repeat(var(--skills-columns), auto);
   grid-row-gap: 5px;
-}
-
-.skills-first-column {
-  padding-left: var(--outline-padding);
 }
