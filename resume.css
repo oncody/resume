@@ -8,6 +8,7 @@
   --body-width-padding: 40px;
   --body-height-padding: 40px;
 
+  --professional-title-indent: 20px;
   --section-separation: 15px;
   --subsection-separation: 10px;
   --indent-size: 10px;
@@ -156,13 +157,9 @@ ul {
 }
 
 .professional-title {
-  /*text-indent: 20px;*/
-  margin-left: 20px;
-
+  margin-left: var(--professional-title-indent);
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
-  /*align-items: center;*/
 }
 
 .professional-title p, span, div {
