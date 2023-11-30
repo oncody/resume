@@ -12,25 +12,22 @@
   --body-width-padding: 40px;
   --body-height-padding: 40px;
 
-  --default-font-size: 14px;
-  --h1-font-size: 28px;
-  --h2-font-size: 22px;
-  --h3-font-size: 20px;
-  --h4-font-size: 18px;
-  --h5-font-size: 16px;
-  --h6-font-size: 14px;
-  --small-text-font-size: 12px;
-  --skill-font-size: 14px;
-
-  --default-line-height: 1.5;
-  --default-letter-spacing: 0px;
   --hr-margin: 5px;
+}
 
+/* Font size */
+:root {
+  --default-font-size: 14px;
+  --main-title-font-size: 28px;
+  --subtitle-font-size: 22px;
+  --section-title-font-size: 20px;
+  --section-item-font-size: 18px;
+  --section-item-subtitle-font-size: 16px;
+  --tiny-text-font-size: 12px;
+}
 
-  --default-font-family: 'Avenir', sans-serif;
-  /*--default-font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
-  /*--default-font-family: 'Lato', sans-serif;*/
-
+/* Colors */
+:root {
   --primary-color: #000000;
 
   /*--accent-color:  #0095D4;*/
@@ -48,6 +45,19 @@
   /*--accent-color:  #00FF00;*/
 }
 
+/* Font family */
+:root {
+  --default-font-family: 'Avenir', sans-serif;
+  /*--default-font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
+  /*--default-font-family: 'Lato', sans-serif;*/
+}
+
+/* Font line Settings */
+:root {
+  --default-line-height: 1.5;
+  --default-letter-spacing: 0px;
+}
+
 body {
   width: var(--body-width);
   height: var(--body-height);
@@ -59,12 +69,11 @@ body {
   font-size: var(--default-font-size);
   line-height: var(--default-line-height);
   letter-spacing: var(--default-letter-spacing);
-
   padding: var(--body-height-padding) var(--body-width-padding);
 }
 
 body * {
-  /*font-size: var(--default-font-size);*/
+  font-size: var(--default-font-size);
   line-height: var(--default-line-height);
   font-weight: normal;
   margin-block-start: var(--default-margin);
@@ -74,33 +83,30 @@ body * {
   letter-spacing: var(--default-letter-spacing);
 }
 
-h1 {
-  font-size: var(--h1-font-size);
+.main-title {
+  font-size: var(--main-title-font-size);
 }
 
-h2 {
-  font-size: var(--h2-font-size);
+.subtitle {
+  font-size: var(--subtitle-font-size);
 }
 
-h3 {
-  font-size: var(--h3-font-size);
+.section-title {
+  font-size: var(--section-title-font-size);
 }
 
-h4 {
-  font-size: var(--h4-font-size);
+.section-item {
+  font-size: var(--section-item-font-size);
 }
 
-h5 {
-  font-size: var(--h5-font-size);
+.section-item-subtitle {
+  font-size: var(--section-item-subtitle-font-size);
 }
 
-h6 {
-  font-size: var(--h6-font-size);
+.tiny-text {
+  font-size: var(--tiny-text-font-size);
 }
 
-.small-text {
-  font-size: var(--small-text-font-size);
-}
 
 ul {
   padding-left: calc(4 * (var(--outline-padding)));
@@ -167,10 +173,6 @@ ul {
   margin-top: var(--hr-margin);
   margin-bottom: var(--hr-margin);
   /*border-bottom: solid 1px black;*/
-}
-
-#skills li {
-  font-size: var(--skill-font-size);
 }
 
 .experience-container {
