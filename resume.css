@@ -89,6 +89,7 @@ body * {
 
 .subtitle {
   font-size: var(--subtitle-font-size);
+  color: var(--accent-color);
 }
 
 .section-title {
@@ -101,6 +102,7 @@ body * {
 
 .section-item-subtitle {
   font-size: var(--section-item-subtitle-font-size);
+  color: var(--accent-color);
 }
 
 .tiny-text {
@@ -173,13 +175,6 @@ ul {
   margin-top: var(--hr-margin);
   margin-bottom: var(--hr-margin);
   /*border-bottom: solid 1px black;*/
-}
-
-.experience-container {
-  /*display: grid;*/
-  /*grid-template-columns: repeat(var(--experience-columns), 1fr);*/
-  /*grid-row-gap: 5px;*/
-  /*align-items: baseline; !* align text at the bottom *!*/
 }
 
 .experience-full-span {
