@@ -117,7 +117,11 @@ body * {
 
 ul {
   /*padding-left: calc(4 * (var(--outline-padding)));*/
-  line-height: 1.7;
+  /*line-height: 1.7;*/
+}
+
+li {
+  /*margin-bottom: 5px;*/
 }
 
 .flexbox-container-vertical {
@@ -156,6 +160,10 @@ ul {
 
 .professional-title p, span, div {
   /*text-align: left;*/
+}
+
+.professional-experience-item {
+  margin-bottom: 10px;
 }
 
 /* Style the floating HR */
