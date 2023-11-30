@@ -13,6 +13,7 @@
   --body-height-padding: 40px;
 
   --section-separation: 15px;
+  --indent-size: 10px;
 
   --hr-margin: 5px;
 }
@@ -51,8 +52,6 @@
 /* Font family */
 :root {
   --default-font-family: 'Avenir', sans-serif;
-  /*--default-font-family: 'Montserrat', Arial, Helvetica, sans-serif;*/
-  /*--default-font-family: 'Lato', sans-serif;*/
 }
 
 /* Font line Settings */
