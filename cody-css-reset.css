@@ -4,7 +4,7 @@
   --default-border: 0px;
 }
 
-h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, li, table, th, tr, td, thead, tbody, tfoot, a, link, nav, dl, dt, dd, header, footer, main, section, article, aside, details, dialog, summary, data, head, meta, base, body, html, menu {
+body, body * {
   padding: var(--default-padding);
   margin: var(--default-margin);
   border: var(--default-border);
