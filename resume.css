@@ -92,11 +92,12 @@ body * {
 
 .main-title {
   font-size: var(--main-title-font-size);
+  color: var(--accent-color);
 }
 
 .subtitle {
   font-size: var(--subtitle-font-size);
-  color: var(--accent-color);
+  /*color: var(--accent-color);*/
 }
 
 .section-title {
