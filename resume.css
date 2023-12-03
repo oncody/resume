@@ -70,18 +70,14 @@ body {
   letter-spacing: var(--default-letter-spacing);
   display: flex;
   justify-content: center;
-  /*border: solid 1px black;*/
-}
 
-body * {
-  font-size: var(--default-font-size);
-  line-height: var(--default-line-height);
   font-weight: normal;
   margin-block-start: var(--default-margin);
   margin-block-end: var(--default-margin);
   margin-inline-start: var(--default-margin);
   margin-inline-end: var(--default-margin);
-  letter-spacing: var(--default-letter-spacing);
+
+  /*border: solid 1px black;*/
 }
 
 #body-content {
