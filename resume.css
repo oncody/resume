@@ -149,6 +149,12 @@ body {
   align-items: center
 }
 
+.flexbox-container-vertical-align-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
 .flexbox-container-basic {
   display: flex;
   align-items: baseline; /* align text at the bottom */
