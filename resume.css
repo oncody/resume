@@ -1,12 +1,12 @@
 :root {
 
   --body-width-padding: 60px;
-  --body-height-padding: 60px;
+  --body-height-padding: 50px;
 
   --body-width: 695px;
   --body-height: 935px;
 
-  --section-separation: 10px;
+  --section-separation: 5px;
   --subsection-separation: 5px;
 
   --professional-title-indent: 20px;
@@ -21,7 +21,8 @@
 /* Font size */
 :root {
   --main-title-font-size: 48px;
-  --subtitle-font-size: 24px;
+  --subtitle-font-size: 26px;
+
   --section-title-font-size: 22px;
   --section-item-font-size: 18px;
   --section-item-subtitle-font-size: 16px;
@@ -140,6 +141,12 @@ body {
 .flexbox-container-vertical {
   display: flex;
   flex-direction: column;
+}
+
+.flexbox-container-vertical-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 .flexbox-container-basic {
