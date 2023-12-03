@@ -1,9 +1,10 @@
 :root {
-  --body-width: 734px;
-  --body-height: 974px;
 
-  --body-width-padding: 80px;
-  --body-height-padding: 80px;
+  --body-width-padding: 60px;
+  --body-height-padding: 60px;
+
+  --body-width: 695px;
+  --body-height: 935px;
 
   --professional-title-indent: 20px;
   --section-separation: 15px;
@@ -77,12 +78,14 @@ body {
   margin-block-end: var(--default-margin);
   margin-inline-start: var(--default-margin);
   margin-inline-end: var(--default-margin);
+}
 
+#body-box {
+  padding: var(--body-height-padding) var(--body-width-padding);
   border: solid 1px black;
 }
 
 #body-content {
-  padding: var(--body-height-padding) var(--body-width-padding);
   width: var(--body-width);
   height: var(--body-height);
 }
