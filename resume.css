@@ -20,8 +20,8 @@
 
 /* Font size */
 :root {
-  --main-title-font-size: 48px;
-  --subtitle-font-size: 24px;
+  --main-title-font-size: 36px;
+  --subtitle-font-size: 20px;
 
   --section-title-font-size: 22px;
   --section-item-font-size: 18px;
@@ -108,7 +108,7 @@ body {
   /*color: var(--accent-color);*/
 }
 
-.section-item {
+.section-item-header {
   font-size: var(--section-item-font-size);
   color: var(--accent-color);
 }
@@ -149,6 +149,12 @@ body {
   align-items: center
 }
 
+.flexbox-container-vertical-align-start {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 .flexbox-container-vertical-align-end {
   display: flex;
   flex-direction: column;
@@ -160,12 +166,20 @@ body {
   align-items: baseline; /* align text at the bottom */
 }
 
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
 .flexbox-container-basic > * {
   margin-right: var(--title-subtitle-separation);
 }
 
+/* Align items left to right */
 .flexbox-container-full {
   display: flex;
+  flex-direction: row;
   align-items: baseline; /* align text at the bottom */
   justify-content: space-between; /* Push items to the left and right */
 }
@@ -205,4 +219,15 @@ body {
   margin-top: var(--hr-margin);
   margin-bottom: var(--hr-margin);
   /*border-bottom: solid 1px black;*/
+}
+
+.section-items {
+  margin-left: 10px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: var(--default-font-size);
 }
