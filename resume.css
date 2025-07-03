@@ -34,7 +34,7 @@ body {
   width: var(--resume-width);
   min-height: var(--resume-height);
   padding: var(--spacing-lg);
-  border: 1px solid #000;
+  /* border: 1px solid #000;  Uncomment this line to add a border around the resume */
   background: #fff;
   box-sizing: border-box;
 }
@@ -174,7 +174,7 @@ hr.exp-divider {
   }
   .resume-container {
     margin: 36px 24px;
-    border: 1px solid #000;
+    /* border: 1px solid #000;  Uncomment this line to add a border around the resume (print) */
     min-height: 860px;
     background: #fff;
   }
