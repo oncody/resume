@@ -2,38 +2,37 @@
   --primary-color: #000000;
   --accent-color: #000000;
   --font-family: 'Avenir', sans-serif;
-  --line-height: 1.5;
-  --font-size: 14px;
-  --section-title-font-size: 22px;
-  --heading-font-size: 36px;
-  --subheading-font-size: 20px;
-  --light-font-size: 12px;
-  --spacing: 16px;
-  --spacing-sm: 8px;
-  --spacing-lg: 24px;
-  --resume-width: 695px;
-  --resume-height: 935px;
-  --page-padding-vertical: 40px;
-  --page-padding-horizontal: 24px;
+  --font-size: 13px;
+  --section-title-font-size: 18px;
+  --heading-font-size: 28px;
+  --subheading-font-size: 15px;
+  --light-font-size: 11px;
+  --spacing: 12px;
+  --spacing-sm: 6px;
+  --spacing-lg: 18px;
+  --resume-width: 680px;
+  --resume-height: 900px;
+  --page-padding-vertical: 24px;
+  --page-padding-horizontal: 12px;
 }
 
 body {
   margin: var(--page-padding-vertical) var(--page-padding-horizontal);
   font-family: var(--font-family);
   font-size: var(--font-size);
-  line-height: var(--line-height);
+  line-height: 1.38;
   color: var(--primary-color);
   display: flex;
   justify-content: center;
-  background-color: white;
+  background: #fff;
 }
 
 .resume-container {
   width: var(--resume-width);
-  height: var(--resume-height);
+  min-height: var(--resume-height);
   padding: var(--spacing-lg);
   border: 1px solid #000;
-  background-color: white;
+  background: #fff;
   box-sizing: border-box;
 }
 
@@ -44,13 +43,13 @@ body {
 
 .name {
   font-size: var(--heading-font-size);
-  margin: 0;
+  margin: 0 0 var(--spacing-sm) 0;
   color: var(--accent-color);
 }
 
 .tagline {
   font-size: var(--subheading-font-size);
-  margin: var(--spacing-sm) 0;
+  margin: 0 0 var(--spacing-sm) 0;
 }
 
 .contact-info {
@@ -64,8 +63,8 @@ body {
 }
 
 .contact-info.compact {
-  font-size: 13px;
-  gap: 6px;
+  font-size: 12px;
+  gap: 4px;
 }
 
 .summary {
@@ -85,74 +84,61 @@ body {
 .skills-list-table {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
 }
 .skill-row {
   display: flex;
   align-items: flex-start;
 }
 .skill-label {
-  min-width: 142px;
+  min-width: 118px;
   font-weight: bold;
+  font-size: var(--font-size);
 }
 .skill-data {
   flex: 1;
-  padding-left: 10px;
+  padding-left: 9px;
   text-align: left;
   word-break: break-word;
 }
 
-/* Professional Experience Alignment */
 .job-meta {
   display: grid;
-  grid-template-columns: 1.3fr 1.5fr 1.1fr;
-  gap: 10px;
+  grid-template-columns: 1.25fr 1.3fr 1fr;
+  gap: 8px;
   align-items: baseline;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   font-weight: normal;
+  font-size: var(--font-size);
 }
 .job-company strong {
   font-weight: bold;
 }
-.job-title {
-  /* center column, normal weight */
-}
 .job-dates {
   text-align: right;
-  color: #555;
+  color: #444;
+  font-size: var(--light-font-size);
   font-weight: normal;
-  font-size: 13px;
 }
 
 .job, .project, .education {
-  margin-bottom: var(--spacing);
-}
-
-.job-header, .project-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-weight: bold;
-}
-
-.job-title, .job-company, .project-title, .education-school {
-  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
 }
 
 .job-details, .project-description {
-  margin-top: var(--spacing-sm);
+  margin-top: 0;
   padding-left: var(--spacing-sm);
 }
 
 .job-details li {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 2px;
 }
 
 .education-degree, .education-dates {
   display: block;
   font-size: var(--light-font-size);
   padding-left: var(--spacing-sm);
-  margin-top: var(--spacing-sm);
+  margin-top: 2px;
 }
 
 @media print {
@@ -160,11 +146,10 @@ body {
     margin: 0 !important;
     padding: 0 !important;
   }
-
   .resume-container {
-    margin: 40px 24px;
+    margin: 24px 12px;
     border: 1px solid #000;
-    height: auto;
-    background-color: white;
+    min-height: 860px;
+    background: #fff;
   }
 }
