@@ -12,6 +12,7 @@
   --spacing-lg: 18px;
   --tight-spacing: 5px;
   --skills-extra-pad: 18px;
+  --tagline-gap: 15px;
   --resume-width: 680px;
   --resume-height: 900px;
   --page-padding-vertical: 19px;
@@ -54,6 +55,11 @@ body {
   font-size: var(--subheading-font-size);
   margin: 0 0 var(--tight-spacing) 0;
   display: block;
+  letter-spacing: 0.01em;
+}
+.tagline .pipe {
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .contact-info {
@@ -64,6 +70,7 @@ body {
   font-size: var(--font-size);
   max-width: 660px;
   margin: 0 auto;
+  margin-bottom: var(--tagline-gap);
 }
 
 .contact-info.compact {
@@ -85,7 +92,6 @@ body {
   margin-bottom: var(--tight-spacing);
 }
 
-/* Technical Skills Table */
 .skills-list-table {
   display: flex;
   flex-direction: column;
@@ -137,11 +143,17 @@ body {
   margin-bottom: 2px;
 }
 
-/* Add extra spacing between jobs for readability */
 .job + .job {
   margin-top: var(--spacing-sm);
   padding-top: var(--tight-spacing);
   border-top: 0.5px solid #e6e6e6;
+}
+
+hr.exp-divider {
+  border: none;
+  border-top: 1px solid #d3d3d3;
+  margin: 10px 0 5px 0;
+  width: 100%;
 }
 
 .section.education-section {
