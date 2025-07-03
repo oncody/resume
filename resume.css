@@ -12,11 +12,8 @@
   --spacing-sm: 8px;
   --spacing-lg: 24px;
 
-  /* Matched from original fixed size */
   --resume-width: 695px;
   --resume-height: 935px;
-
-  /* Page margin padding */
   --page-padding-vertical: 40px;
   --page-padding-horizontal: 24px;
 }
@@ -63,6 +60,13 @@ body {
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   font-size: var(--font-size);
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.contact-info.compact {
+  font-size: 13px;
+  gap: 6px;
 }
 
 .summary {
@@ -114,7 +118,6 @@ body {
   margin-top: var(--spacing-sm);
 }
 
-/* PRINT FIXES */
 @media print {
   body {
     margin: 0 !important;
@@ -123,7 +126,7 @@ body {
 
   .resume-container {
     margin: 40px 24px;
-    border: 1px solid #000; /* KEEP VISIBLE BORDER */
+    border: 1px solid #000;
     height: auto;
     background-color: white;
   }
