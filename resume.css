@@ -10,9 +10,11 @@
   --spacing: 12px;
   --spacing-sm: 6px;
   --spacing-lg: 18px;
+  --tight-spacing: 5px;
+  --skills-extra-pad: 18px;
   --resume-width: 680px;
   --resume-height: 900px;
-  --page-padding-vertical: 24px;
+  --page-padding-vertical: 19px;
   --page-padding-horizontal: 12px;
 }
 
@@ -38,18 +40,20 @@ body {
 
 .resume-header {
   text-align: center;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing);
 }
 
 .name {
   font-size: var(--heading-font-size);
-  margin: 0 0 var(--spacing-sm) 0;
+  margin: 0 0 var(--tight-spacing) 0;
   color: var(--accent-color);
+  display: block;
 }
 
 .tagline {
   font-size: var(--subheading-font-size);
-  margin: 0 0 var(--spacing-sm) 0;
+  margin: 0 0 var(--tight-spacing) 0;
+  display: block;
 }
 
 .contact-info {
@@ -65,26 +69,27 @@ body {
 .contact-info.compact {
   font-size: 12px;
   gap: 4px;
+  margin-bottom: var(--tight-spacing);
 }
 
 .summary {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing);
 }
 
 .section {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing);
 }
 
 .section-title {
   font-size: var(--section-title-font-size);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--tight-spacing);
 }
 
 /* Technical Skills Table */
 .skills-list-table {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
 }
 .skill-row {
   display: flex;
@@ -97,7 +102,7 @@ body {
 }
 .skill-data {
   flex: 1;
-  padding-left: 9px;
+  padding-left: var(--skills-extra-pad);
   text-align: left;
   word-break: break-word;
 }
@@ -107,7 +112,7 @@ body {
   grid-template-columns: 1.25fr 1.3fr 1fr;
   gap: 8px;
   align-items: baseline;
-  margin-bottom: 3px;
+  margin-bottom: var(--tight-spacing);
   font-weight: normal;
   font-size: var(--font-size);
 }
@@ -121,24 +126,33 @@ body {
   font-weight: normal;
 }
 
-.job, .project, .education {
-  margin-bottom: var(--spacing-sm);
+.job {
+  margin-bottom: var(--spacing);
 }
-
 .job-details, .project-description {
-  margin-top: 0;
+  margin-top: var(--tight-spacing);
   padding-left: var(--spacing-sm);
 }
-
 .job-details li {
   margin-bottom: 2px;
 }
 
-.education-degree, .education-dates {
-  display: block;
-  font-size: var(--light-font-size);
-  padding-left: var(--spacing-sm);
-  margin-top: 2px;
+/* Add extra spacing between jobs for readability */
+.job + .job {
+  margin-top: var(--spacing-sm);
+  padding-top: var(--tight-spacing);
+  border-top: 0.5px solid #e6e6e6;
+}
+
+.section.education-section {
+  margin-bottom: var(--tight-spacing);
+}
+
+.education-single-line {
+  font-size: var(--font-size);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media print {
@@ -147,7 +161,7 @@ body {
     padding: 0 !important;
   }
   .resume-container {
-    margin: 24px 12px;
+    margin: 19px 12px;
     border: 1px solid #000;
     min-height: 860px;
     background: #fff;
