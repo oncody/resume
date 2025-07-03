@@ -12,7 +12,8 @@
   --spacing-lg: 18px;
   --tight-spacing: 5px;
   --skills-extra-pad: 18px;
-  --tagline-gap: 15px;
+  --tagline-gap: 20px; /* increased from 15px */
+  --after-hr-spacing: 10px; /* extra space after hr before next job */
   --resume-width: 680px;
   --resume-height: 900px;
   --page-padding-vertical: 36px;
@@ -154,6 +155,11 @@ hr.exp-divider {
   border-top: 1px solid #d3d3d3;
   margin: 10px 0 5px 0;
   width: 100%;
+}
+
+/* Extra space after each horizontal rule and before next job */
+hr.exp-divider + .job {
+  margin-top: var(--after-hr-spacing);
 }
 
 .section.education-section {
