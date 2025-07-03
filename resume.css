@@ -12,6 +12,7 @@
   --spacing-sm: 8px;
   --spacing-lg: 24px;
 
+  /* Matched from original fixed size */
   --resume-width: 695px;
   --resume-height: 935px;
   --page-padding-vertical: 40px;
@@ -82,9 +83,25 @@ body {
   margin-bottom: var(--spacing-sm);
 }
 
-.skills-list .skill-group {
-  margin-bottom: var(--spacing-sm);
-  padding-left: var(--spacing-sm);
+/* Technical Skills Table */
+.skills-list-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.skill-row {
+  display: flex;
+  align-items: flex-start;
+}
+.skill-label {
+  min-width: 142px;
+  font-weight: bold;
+}
+.skill-data {
+  flex: 1;
+  padding-left: 10px;
+  text-align: left;
+  word-break: break-word;
 }
 
 .job, .project, .education {
