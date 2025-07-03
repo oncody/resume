@@ -11,8 +11,6 @@
   --spacing: 16px;
   --spacing-sm: 8px;
   --spacing-lg: 24px;
-
-  /* Matched from original fixed size */
   --resume-width: 695px;
   --resume-height: 935px;
   --page-padding-vertical: 40px;
@@ -111,13 +109,13 @@ body {
   gap: 10px;
   align-items: baseline;
   margin-bottom: 4px;
+  font-weight: normal;
+}
+.job-company strong {
   font-weight: bold;
 }
-.job-company {
-  /* left aligned by default */
-}
 .job-title {
-  /* center column */
+  /* center column, normal weight */
 }
 .job-dates {
   text-align: right;
