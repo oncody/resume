@@ -12,8 +12,8 @@
   --spacing-lg: 18px;
   --tight-spacing: 5px;
   --skills-extra-pad: 18px;
-  --tagline-gap: 20px; /* increased from 15px */
-  --after-hr-spacing: 10px; /* extra space after hr before next job */
+  --tagline-gap: 25px;
+  --after-hr-spacing: 10px;
   --resume-width: 680px;
   --resume-height: 900px;
   --page-padding-vertical: 36px;
@@ -54,7 +54,7 @@ body {
 
 .tagline {
   font-size: var(--subheading-font-size);
-  margin: 0 0 var(--tight-spacing) 0;
+  margin: 0 0 25px 0; /* Directly control margin below the tagline here */
   display: block;
   letter-spacing: 0.01em;
 }
@@ -71,7 +71,7 @@ body {
   font-size: var(--font-size);
   max-width: 660px;
   margin: 0 auto;
-  margin-bottom: var(--tagline-gap);
+  /* Removed margin-bottom here to give full control to tagline margin */
 }
 
 .contact-info.compact {
@@ -157,7 +157,6 @@ hr.exp-divider {
   width: 100%;
 }
 
-/* Extra space after each horizontal rule and before next job */
 hr.exp-divider + .job {
   margin-top: var(--after-hr-spacing);
 }
