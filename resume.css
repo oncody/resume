@@ -15,8 +15,8 @@
   --tagline-gap: 15px;
   --resume-width: 680px;
   --resume-height: 900px;
-  --page-padding-vertical: 19px;
-  --page-padding-horizontal: 12px;
+  --page-padding-vertical: 36px;
+  --page-padding-horizontal: 24px;
 }
 
 body {
@@ -173,7 +173,7 @@ hr.exp-divider {
     padding: 0 !important;
   }
   .resume-container {
-    margin: 19px 12px;
+    margin: 36px 24px;
     border: 1px solid #000;
     min-height: 860px;
     background: #fff;
