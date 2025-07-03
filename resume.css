@@ -9,7 +9,7 @@
   --section-separation: 5px;
   --subsection-separation: 5px;
 
-  --professional-title-indent: 20px;
+  --professional-title-indent: 0px;
   --indent-size: 10px;
   --title-subtitle-separation: 10px;
   --professional-experience-list-item-margin: 22px;
@@ -27,6 +27,7 @@
   --section-item-font-size: 18px;
   --section-item-subtitle-font-size: 16px;
   --default-font-size: 14px;
+  --contact-font-size: 14px;
   --tiny-text-font-size: 12px;
 }
 
@@ -82,9 +83,10 @@ body {
   margin-inline-end: var(--default-margin);
 }
 
+/* Here is where you can set a border around it */
 #body-box {
   padding: var(--body-height-padding) var(--body-width-padding);
-  /*border: solid 1px black;*/
+  border: solid 1px black;
 }
 
 #body-content {
@@ -192,6 +194,7 @@ body {
   margin-left: var(--professional-title-indent);
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .professional-experience-item {
@@ -227,7 +230,7 @@ body {
 
 .contact-row {
   display: flex;
-  gap: 10px;
+  /*gap: 10px;*/
   flex-wrap: wrap;
-  font-size: var(--default-font-size);
+  font-size: var(--contact-font-size);
 }
