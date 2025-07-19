@@ -9,13 +9,13 @@
   --light-font-size: 11px;
   --spacing: 12px;
   --spacing-sm: 6px;
-  --spacing-lg: 18px;
+  --spacing-lg: 0px;
   --tight-spacing: 5px;
   --skills-extra-pad: 40px; /* increased from 18px */
   --after-hr-spacing: 10px;
   --resume-width: 680px;
   --resume-height: 900px;
-  --page-padding-vertical: 36px;
+  --page-padding-vertical: 0px;
   --page-padding-horizontal: 24px;
 }
 
